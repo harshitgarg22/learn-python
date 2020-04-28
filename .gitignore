@@ -3,5 +3,5 @@
 *.py#
 *.sublime-workspace
 *.pdf
-./automate_online-materials/
-./books
+automate_online-materials/
+books/
