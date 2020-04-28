@@ -1,3 +1,5 @@
+#!python3
+
 from pixelate import pixelate
 from utils_pixelate import open_image, save_image
 
@@ -16,10 +18,12 @@ if __name__ == '__main__':
     num_files = len((next(os.walk(originalImagePath)))[2])
     print('Reading {} files...'.format(num_files))
 
-    steps = {'shapeofwater': 10, 'marriage': 25, 'birdman': 20, 'jaws': 10,
-             'dunkirk': 20, 'cmbyn': 20, '127': 20, 'fargo': 20, 'florida': 20, 'moonlight': 25}
+    steps = {'shapeofwater': 70, 'marriage': 25, 'birdman': 110, 'jaws': 50,
+             'dunkirk': 15, 'cmbyn': 55, '127': 5, 'fargo': 20, 'florida': 25, 'moonlight': 80}
 
     for filename in original_file_list:
+        if not (filename.name.endswith('.jpg')):
+            continue
         orig = open_image(os.path.join(originalImagePath, filename))
 
         filmName = os.path.basename(filename.name)
