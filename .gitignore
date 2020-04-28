@@ -1,6 +1,7 @@
 *~.~
 *~
 *.py#
+*.pyc
 *.sublime-workspace
 *.pdf
 automate_online-materials/
