@@ -7,3 +7,5 @@
 automate_online-materials/
 books/
 .learn-py/
+examples/pixelate/images/
+.vscode
